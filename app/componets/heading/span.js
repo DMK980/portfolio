@@ -14,7 +14,7 @@ const Span = ({text,delay}) => {
         setIndex((prevIndex) => (prevIndex + 1) % text.length);
         }, delay);
         return () => clearInterval(interval); 
-    }, []); 
+    }, [delay,text.length]); 
   return (
     <div className={`${pagestyles.underline} ${styles.div}`}>
         <AnimatePresence mode='wait'>
