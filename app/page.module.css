@@ -1,0 +1,42 @@
+/* header */
+.header{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+/* headings styles */
+.headings{
+  font-size: clamp(2rem,5vw + 1rem ,7rem);
+  max-width: 2000px;
+}
+/* sections */
+.landing,.projects,.contact{
+  padding: 5rem 2rem 0 2rem;
+}
+
+.landing{
+  padding-bottom: 5rem;
+}
+.underline{
+  border-bottom: 5px solid var(--underlinec);
+  display: inline-block;
+  overflow: hidden;
+  z-index: 10;
+}
+.projectcards{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 0;
+  max-width: 1283px;
+  margin: auto;
+}
+.largelinks{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}

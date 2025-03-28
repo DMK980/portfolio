@@ -1,0 +1,7 @@
+.button{
+    padding: 0.5rem 0.75rem;
+    background-color: var(--buttonbgc);
+    color: var(--buttonc);
+    border: 2px solid var(--buttonbgc);
+    font-weight: 800;
+}

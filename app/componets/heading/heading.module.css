@@ -1,0 +1,12 @@
+.text{
+    position: relative;
+    /* top:50px; */
+}
+#textid{
+    color: var(--headings);
+}
+.div{
+    overflow: hidden;
+    position: relative;
+    vertical-align:text-bottom;
+}

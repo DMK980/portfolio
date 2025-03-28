@@ -1,0 +1,71 @@
+:root {
+  --background: #293241;
+  --headings: #FCA311;
+
+  --buttonbgc: #eef4ed;
+  --buttonc: #000000;
+
+  --underlinec: #eef4ed;
+
+  --projcontainer: #ffffff;
+  --projcolor: #ffffff;
+
+  --projheading: rgb(50, 205, 50);
+  --projtech:  aqua;
+  --projlink: limegreen;
+
+  transition: var(--background) 0.3s,
+              var(--headings) 0.3,
+              var(--buttonbgc) 0.3,
+              var(--buttonc) 0.3,
+              var(--underlinec)
+}
+
+:root.dark {
+  --background: #EEF4ED;
+  --headings: #D00000;
+
+  --buttonbgc: #0B2545;
+  --buttonc: #EEF4ED;
+
+  --underlinec: #370617;
+
+  --projcontainer: #370617;
+  --projcolor: #370617;
+
+  --projheading: rgb(208, 0, 0);
+  --projtech:  darkblue;
+  --projlink: #D00000;
+}
+
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+body {
+  color: var(--headings);
+  background: var(--background);
+  font-family: var(--font-roboto-mono), monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
