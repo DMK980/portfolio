@@ -42,7 +42,7 @@ export default function Home() {
           <Button stateupdate={toggleTheme}text='Change color scheme'/>
         </header>
         <section className={styles.landing}>
-          <h1 className={`${styles.mainHeader} ${styles.headings}`}>Hi, Im <Span text={store._currentValue.heading.names}delay={11000}/> I&apos;m a <Span text={store._currentValue.heading.roles}delay={6000}/> from <Span text={store._currentValue.heading.locations}delay={15000}/>.</h1>
+          <h1 className={`${styles.mainHeader} ${styles.headings}`}>Hi, Im <Span text={store._currentValue.heading.names}delay={11000}type='name'/> I&apos;m a <Span text={store._currentValue.heading.roles}delay={6000}type='role'/> from <Span text={store._currentValue.heading.locations}delay={15000}type='location'/>.</h1>
         </section>
         <section className={styles.projects}>
           <h2 className={`${styles.projectsHeading} ${styles.headings}`}>Here are some of my works</h2>

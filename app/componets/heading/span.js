@@ -5,7 +5,7 @@ import pagestyles from '../../page.module.css'
 import styles from './heading.module.css'
 import {motion,AnimatePresence} from 'motion/react'
 
-const Span = ({text,delay}) => {
+const Span = ({text,delay,type}) => {
 
     const [index, setIndex] = useState(0);
 
@@ -16,7 +16,7 @@ const Span = ({text,delay}) => {
         return () => clearInterval(interval); 
     }, [delay,text.length]); 
   return (
-    <div className={`${pagestyles.underline} ${styles.div}`}>
+    <div className={`${ type === 'role'? pagestyles.roleunderline:pagestyles.underline} ${styles.div}`}>
         <AnimatePresence mode='wait'>
             <motion.span 
                 id={styles.textid}

@@ -17,11 +17,17 @@
 .landing{
   padding-bottom: 5rem;
 }
-.underline{
+.underline,.roleunderline{
   border-bottom: 5px solid var(--underlinec);
   display: inline-block;
   overflow: hidden;
   z-index: 10;
+}
+@media screen and (max-width:750px) {
+  .roleunderline{
+    border: none;
+  }
+  
 }
 .projectcards{
   display: flex;
